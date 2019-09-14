@@ -1,6 +1,6 @@
 #dijkstra Algorithm
 
-#' find the shortest path between two nodes.
+#' find shortest path between two nodes.
 #'
 #' @param df A data frame with two vertices and their weights.
 #' @param init_node A number as starting node.
