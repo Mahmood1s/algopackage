@@ -1,0 +1,10 @@
+Package: lab3algopackage
+Type: Package
+Title: Euclidean and Dijksra Algorithm
+Version: 1.0
+Date: 2019-09-14
+Author: Mahmood Siddique
+Maintainer: The package maintainer <mahmood1s@gmail.com>
+Description: This package is skeleton for implementation of Euclidean (Greatest common Divisor) and Dijkstra (shortest Path first) Algorithm
+License: No license?
+RoxygenNote: 6.1.1
