@@ -16,14 +16,17 @@
 
 dijkstra<- function(my_df,init_node){
 
+  #stop if my_df is not a dataframe
+  stopifnot(is.data.frame(my_df),ncol(my_df)==3,!any(is.na(my_df[,])))
+
   #get the number of nodes in graph
   node_range<- unique(my_df[,1],incomparables = FALSE)
 
-  #converting data.frame to matrix
-  my_matrix<-convert_to_matrix(my_df,node_range)
-
   #stopif init_node is not with graph range
   stopifnot(init_node %in% node_range)
+
+  #converting data.frame to matrix
+  my_matrix<-convert_to_matrix(my_df,node_range)
 
   #initialize all the distanes with infinity
   distances<-rep(Inf,length(node_range))
