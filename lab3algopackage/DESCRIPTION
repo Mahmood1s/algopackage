@@ -6,5 +6,5 @@ Date: 2019-09-14
 Author: Mahmood Siddique
 Maintainer: The package maintainer <mahmood1s@gmail.com>
 Description: This package is skeleton for implementation of Euclidean (Greatest common Divisor) and Dijkstra (shortest Path first) Algorithm
-License: No license?
+License: GNU General Public License v3.0
 RoxygenNote: 6.1.1
