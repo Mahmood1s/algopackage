@@ -2,7 +2,7 @@
 % Please edit documentation in R/Dijkstra Algorithm.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{find the shortest path between two nodes.}
+\title{find shortest path between two nodes.}
 \usage{
 dijkstra(df, init_node)
 }
@@ -15,7 +15,7 @@ dijkstra(df, init_node)
 The shortest path vector from \code{init_node} and all other nodes.
 }
 \description{
-find the shortest path between two nodes.
+find shortest path between two nodes.
 }
 \examples{
 dijkstra(wiki_graph, 1)

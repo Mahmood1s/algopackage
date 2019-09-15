@@ -13,7 +13,7 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{lab3algopackage}
 \packageIndices{lab3algopackage}
-~~ An overview of how to use the package, including the most important functions ~~
+~~ this package is calculating Euclidean (GCD) of two numbers and Dijkstra (Shotest Path First) from~~ ~~given node~~
 }
 \author{
 \packageAuthor{lab3algopackage}
@@ -21,7 +21,8 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{lab3algopackage}
 }
 \references{
-~~ Literature or other references for background information ~~
+~~ https://en.wikipedia.org/wiki/Dijkstra's_algorithm ~~
+~~ https://en.wikipedia.org/wiki/Euclidean_algorithm ~~
 }
 ~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation ~~
 ~~ directory ~~
@@ -31,5 +32,6 @@ Maintainer: \packageMaintainer{lab3algopackage}
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+~~ dijkstra(wiki_graph, 1)
+~~ dijkstra(wiki_graph, 3 ~~
 }
