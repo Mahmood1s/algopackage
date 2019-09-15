@@ -1,12 +1,11 @@
 Package: lab3algopackage
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: GNU General Public License v3.0
+Title: Euclidean and Dijksra Algorithm
+Version: 1.0
+Author: Mahmood Siddique
+Maintainer: The package maintainer <mahmood1s@gmail.com>
+Description: This package is skeleton for implementation of Euclidean (Greatest common Divisor) and Dijkstra (shortest Path first) Algorithm.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Suggests: 
