@@ -2,9 +2,9 @@
 
 #' find shortest path between two nodes.
 #'
-#' @param df A data frame with two vertices and their weights.
+#' @param my_df A data frame with two vertices and their weights.
 #' @param init_node A number as starting node.
-#' @return The shortest path vector from \code{init_node} and all other nodes.
+#' @return The shortest path vector from \code{init_node} to all other nodes.
 #' @examples
 #' v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6)
 #' v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5)
@@ -12,6 +12,7 @@
 #' wiki_graph <-data.frame(v1,v2,w)
 #' dijkstra(wiki_graph, 1)
 #' dijkstra(wiki_graph, 3)
+
 
 dijkstra<- function(my_df,init_node){
 
@@ -66,7 +67,7 @@ minimum_path_function<- function(distance_vector,visited){
   return(min_index)
 }
 
-convert_to_matrix<- function(my_df,node_range){
+convert_to_matrix<- function(df,node_range){
 
   my_matrix<-matrix(c(0:0),ncol=length(node_range),nrow = length(node_range),byrow = TRUE)
   my_row<-1
@@ -75,9 +76,9 @@ convert_to_matrix<- function(my_df,node_range){
   {
     for(j in 1:length(node_range))
     {
-      if(my_df[my_row,1]==i & my_row<=length(my_df[,1]))
+      if(df[my_row,1]==i & my_row<=length(df[,1]))
       {
-        my_matrix[my_df[my_row,1],my_df[my_row,2]]<-my_df[my_row,3]
+        my_matrix[df[my_row,1],df[my_row,2]]<-df[my_row,3]
         my_row<-my_row+1
       }
     }

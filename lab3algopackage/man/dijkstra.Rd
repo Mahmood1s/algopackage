@@ -7,12 +7,12 @@
 dijkstra(my_df, init_node)
 }
 \arguments{
-\item{init_node}{A number as starting node.}
+\item{my_df}{A data frame with two vertices and their weights.}
 
-\item{df}{A data frame with two vertices and their weights.}
+\item{init_node}{A number as starting node.}
 }
 \value{
-The shortest path vector from \code{init_node} and all other nodes.
+The shortest path vector from \code{init_node} to all other nodes.
 }
 \description{
 find shortest path between two nodes.
