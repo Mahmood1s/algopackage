@@ -4,24 +4,26 @@
 \alias{dijkstra}
 \title{find shortest path between two nodes.}
 \usage{
-dijkstra(my_df, init_node)
+dijkstra(wiki_graph, init_node)
 }
 \arguments{
-\item{my_df}{A data frame with two vertices and their weights.}
+\item{wiki_graph}{A data frame with two vertices and their weights.}
 
 \item{init_node}{A number as starting node.}
 }
 \value{
-The shortest path vector from \code{init_node} to all other nodes.
+The shortest path vector from init_node to all other nodes.
 }
 \description{
 find shortest path between two nodes.
 }
 \examples{
+\dontrun{
 v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6)
 v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5)
 w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9)
 wiki_graph <-data.frame(v1,v2,w)
-dijkstra(wiki_graph, 1)
-dijkstra(wiki_graph, 3)
+init_node<-1
+dijkstra(wiki_graph, init_node)
+}
 }

@@ -2,31 +2,33 @@
 
 #' find shortest path between two nodes.
 #'
-#' @param my_df A data frame with two vertices and their weights.
+#' @param wiki_graph A data frame with two vertices and their weights.
 #' @param init_node A number as starting node.
-#' @return The shortest path vector from \code{init_node} to all other nodes.
+#' @return The shortest path vector from init_node to all other nodes.
 #' @examples
+#' \dontrun{
 #' v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6)
 #' v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5)
 #' w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9)
 #' wiki_graph <-data.frame(v1,v2,w)
-#' dijkstra(wiki_graph, 1)
-#' dijkstra(wiki_graph, 3)
+#' init_node<-1
+#' dijkstra(wiki_graph, init_node)
+#'}
 
 
-dijkstra<- function(my_df,init_node){
+dijkstra<- function(wiki_graph,init_node){
 
-  #stop if my_df is not a dataframe
-  stopifnot(is.data.frame(my_df),ncol(my_df)==3,!any(is.na(my_df[,])))
+  #stop if wiki_graph is not a dataframe
+  stopifnot(is.data.frame(wiki_graph),ncol(wiki_graph)==3,!any(is.na(wiki_graph[,])))
 
   #get the number of nodes in graph
-  node_range<- unique(my_df[,1],incomparables = FALSE)
+  node_range<- unique(wiki_graph[,1],incomparables = FALSE)
 
   #stopif init_node is not with graph range
   stopifnot(init_node %in% node_range)
 
   #converting data.frame to matrix
-  my_matrix<-convert_to_matrix(my_df,node_range)
+  my_matrix<-convert_to_matrix(wiki_graph,node_range)
 
   #initialize all the distanes with infinity
   distances<-rep(Inf,length(node_range))

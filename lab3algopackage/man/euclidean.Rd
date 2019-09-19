@@ -18,6 +18,8 @@ The greatest common divisor of \code{first_num} and \code{second_num}.
 find greatest common divisor of two numbers.
 }
 \examples{
+\dontrun{
 euclidean(123612, 13892347912)
 euclidean(100, 1000)
+}
 }

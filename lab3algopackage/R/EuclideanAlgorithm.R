@@ -6,9 +6,10 @@
 #' @param second_num A number.
 #' @return The greatest common divisor of \code{first_num} and \code{second_num}.
 #' @examples
+#' \dontrun{
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
-
+#'}
 
 euclidean<- function(first_num,second_num){
 temp_num<-0
